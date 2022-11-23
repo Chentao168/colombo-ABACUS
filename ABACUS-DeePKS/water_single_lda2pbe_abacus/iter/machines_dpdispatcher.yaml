@@ -55,7 +55,7 @@ train_machine:
     cpu_per_node: 8
     group_size: 1
     source_list: [~/.bashrc]
-  python: "/usr/bin/python3" # use python in path
+  python: "/root/miniconda3/bin/python3" # use python in path
   # resources are no longer needed, and the task will use gpu automatically if there is one
 
 # other settings (these are default, can be omitted)
