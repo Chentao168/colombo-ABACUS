@@ -26,14 +26,14 @@
             "descriptor": {
                 "type": "se_a",
                 "sel": [
-                    16,
-		    4
+                    4,
+		    2
                 ],
                 "rcut_smth": 0.5,
                 "rcut": 5.0,
                 "neuron": [
-                    120,
-                    120,
+                    40,
+                    80,
                     120
                 ],
                 "resnet_dt": true,
