@@ -82,7 +82,7 @@
           "program_id": program_id,
             "keep_backup":true,
             "input_data":{
-              "job_type": "indicate",
+              "job_type": "container",
               "log_file": "task*/fp.log",
               "grouped":true,
               "job_name": "abacus",
@@ -91,7 +91,7 @@
               "checkpoint_time":30,
               "scass_type":"c16_m32_cpu",
               "platform": "ali",
-              "image_name":"abacus-workshop",
+              "image_name":"registry.dp.tech/dptech/prod-12772/abacus-workshop:v1.1",
               "on_demand":0}
         }
       },
