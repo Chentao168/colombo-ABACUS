@@ -21,13 +21,13 @@ scf_machine:
       input_data:
         log_file: log.scf 
         err_file: err.scf
-        job_type: indicate
+        job_type: container
         grouped: true
         job_name: deepks-scf
         disk_size: 100
         scass_type: c16_m32_cpu
         platform: ali
-        image_name: abacus-workshop
+        image_name: registry.dp.tech/dptech/prod-585/abacus-workshop:v1.1
         on_demand: 0
 train_machine: 
   dispatcher: dpdispatcher 
@@ -42,13 +42,13 @@ train_machine:
       input_data:
         log_file: log.train 
         err_file: err.train
-        job_type: indicate
+        job_type: container
         grouped: true
         job_name: deepks-train
         disk_size: 100
         scass_type: c16_m32_cpu
         platform: ali
-        image_name: abacus-workshop
+        image_name: registry.dp.tech/dptech/prod-585/abacus-workshop:v1.1
         on_demand: 0
   dpdispatcher_resources:
     number_node: 1
