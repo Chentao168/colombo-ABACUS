@@ -14,14 +14,14 @@
           "program_id": 11048,
             "input_data":{
                 "api_version":2,
-                "job_type": "indicate",
+                "job_type": "container",
                 "log_file": "00*/train.log",
                 "grouped":true,
                 "job_name": "train",
                 "disk_size": 100,
                 "scass_type":"c16_m62_1 * NVIDIA T4",
                 "platform": "ali",
-                "image_name":"LBG_DeePMD-kit_2.1.0_v1",
+                "image_name":"registry.dp.tech/dptech/deepmd-kit:2.1.5-cuda11.6",
                 "on_demand":0
             }
         }
@@ -48,14 +48,14 @@
           "program_id": 11048,
             "input_data":{
               "api_version":2,
-              "job_type": "indicate",
+              "job_type": "container",
               "log_file": "*/model_devi.log",
               "grouped":true,
               "job_name": "model_devi",
               "disk_size": 200,
               "scass_type":"c16_m62_1 * NVIDIA T4",
               "platform": "ali",
-              "image_name":"LBG_DeePMD-kit_2.1.0_v1",
+              "image_name":"registry.dp.tech/dptech/deepmd-kit:2.1.5-cuda11.6",
               "on_demand":0
             }
         }
