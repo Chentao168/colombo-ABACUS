@@ -11,7 +11,7 @@
         "remote_profile":{
           "email": "Your Email to sign in Bohrium",
           "password": "The password to sign in Bohrium",
-          "program_id": program_id,
+          "program_id": 11048,
             "input_data":{
                 "api_version":2,
                 "job_type": "indicate",
@@ -19,7 +19,7 @@
                 "grouped":true,
                 "job_name": "train",
                 "disk_size": 100,
-                "scass_type":"c8_m32_1 * NVIDIA V100",
+                "scass_type":"c16_m62_1 * NVIDIA T4",
                 "platform": "ali",
                 "image_name":"LBG_DeePMD-kit_2.1.0_v1",
                 "on_demand":0
@@ -45,7 +45,7 @@
         "remote_profile":{
 	  "email": "Your Email to sign in Bohrium",
           "password": "The password to sign in Bohrium",
-          "program_id": program_id,
+          "program_id": 11048,
             "input_data":{
               "api_version":2,
               "job_type": "indicate",
@@ -53,7 +53,7 @@
               "grouped":true,
               "job_name": "model_devi",
               "disk_size": 200,
-              "scass_type":"c8_m32_1 * NVIDIA V100",
+              "scass_type":"c16_m62_1 * NVIDIA T4",
               "platform": "ali",
               "image_name":"LBG_DeePMD-kit_2.1.0_v1",
               "on_demand":0
@@ -71,7 +71,7 @@
     }],
   "fp":
     [{
-      "command": "OMP_NUM_THREADS=1 mpirun -n 8 abacus",
+      "command": "OMP_NUM_THREADS=1 mpirun -n 8 /root/abacus-develop/build/abacus",
       "machine": {
         "batch_type": "Lebesgue",
         "context_type": "LebesgueContext",
@@ -79,7 +79,7 @@
         "remote_profile":{		
 	  "email": "Your Email to sign in Bohrium",
           "password": "The password to sign in Bohrium",
-          "program_id": program_id,
+          "program_id": 11048,
             "keep_backup":true,
             "input_data":{
               "job_type": "container",
@@ -96,7 +96,7 @@
         }
       },
       "resources": {
-        "group_size": 1,
+        "group_size": 4,
         "local_root":"./",
         "source_list": ["/opt/intel/oneapi/setvars.sh"]
       }
