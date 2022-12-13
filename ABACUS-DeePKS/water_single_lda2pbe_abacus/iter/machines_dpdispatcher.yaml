@@ -17,7 +17,7 @@ scf_machine:
     remote_profile:
       email: {your-bohrium-email}
       password: {your-bohrium-password}
-      program_id: {your-bohrium-program-id}
+      program_id: 11035 
       input_data:
         log_file: log.scf 
         err_file: err.scf
@@ -27,7 +27,7 @@ scf_machine:
         disk_size: 100
         scass_type: c16_m32_cpu
         platform: ali
-        image_name: registry.dp.tech/dptech/prod-12772/abacus-workshop:v1.1
+        image_name: registry.dp.tech/dptech/prod-415/abacus-workshop:v1.2 
         on_demand: 0
 train_machine: 
   dispatcher: dpdispatcher 
@@ -38,7 +38,7 @@ train_machine:
     remote_profile:
       email: {your-bohrium-email}
       password: {your-bohrium-password}
-      program_id: {your-bohrium-program-id}
+      program_id: 11035 
       input_data:
         log_file: log.train 
         err_file: err.train
@@ -48,7 +48,7 @@ train_machine:
         disk_size: 100
         scass_type: c16_m32_cpu
         platform: ali
-        image_name: registry.dp.tech/dptech/prod-12772/abacus-workshop:v1.1
+        image_name: registry.dp.tech/dptech/prod-415/abacus-workshop:v1.2 
         on_demand: 0
   dpdispatcher_resources:
     number_node: 1
