@@ -4,9 +4,9 @@
 
 ### A.1 Download input files
 ```
->> cd /data
->> git clone https://gitee.com/deepmodeling/colombo-academy-tutorials.git -b develop
->> cd colombo-academy-tutorials
+>> cd ~
+>> git clone https://gitee.com/deepmodeling/colombo-ABACUS.git -b develop
+>> cd colombo-ABACUS
 >> cd ABACUS/
 >> cd MgO_LCAO
 >> ls
@@ -29,7 +29,7 @@
 
 ### B.1 Run optimization
 ```
->> cd ../../optimization
+>> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/optimization
 >> abacus
 ```
 
@@ -44,7 +44,7 @@
 
 ### C.1 Run SCF
 ```
->> cd ../../band_structure
+>> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/band_structure
 >> cp INPUT_scf INPUT
 >> cp KPT_scf KPT
 >> abacus
@@ -66,8 +66,39 @@
 
 ### C.4 Plot band structure
 ```
->> cd /data/colombo-academy-tutorials/ABACUS/MgO_LCAO/band_structure/OUT.MgO/
+>> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/band_structure/OUT.MgO/
 >> cp ../KPT ./
 >> cp ../config.json ./
 >> abacus-plot -b
+```
+
+## D. DOS and PDOS
+
+### D.1 Run SCF
+```
+>> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/dos/
+>> cp INPUT_scf INPUT
+>> cp KPT_scf KPT
+>> abacus
+```
+
+### D.2 Run NSCF
+```
+>> cp INPUT_nscf INPUT
+>> cp KPT_nscf KPT
+>> abacus
+```
+
+### D.4 Plot TDOS
+```
+>> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/dos/OUT.MgO/
+>> cp ../config_tdos.json ./config.json
+>> abacus-plot -d
+```
+
+### D.5 Plot PDOS
+```
+>> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/dos/OUT.MgO/
+>> cp ../config_pdos.json ./config.json
+>> abacus-plot -d -p -o
 ```
