@@ -5,7 +5,7 @@
 ### A.1 Download input files
 ```
 >> cd ~
->> git clone https://gitee.com/deepmodeling/colombo-ABACUS.git -b develop
+>> git clone https://gitee.com/deepmodeling-activity/colombo-ABACUS.git -b develop
 >> cd colombo-ABACUS
 >> cd ABACUS/
 >> cd MgO_LCAO
