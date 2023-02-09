@@ -27,5 +27,5 @@ md_nstep        5
 md_tfirst       10
 md_dt           1
 
-kspacing        0.1
+kspacing        0.2
 
