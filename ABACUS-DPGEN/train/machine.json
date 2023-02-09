@@ -14,14 +14,14 @@
           "program_id": program_id,
             "input_data":{
                 "api_version":2,
-                "job_type": "indicate",
+                "job_type": "container",
                 "log_file": "00*/train.log",
                 "grouped":true,
                 "job_name": "train",
                 "disk_size": 100,
-                "scass_type":"c8_m32_1 * NVIDIA V100",
+                "scass_type":"c16_m62_1 * NVIDIA T4",
                 "platform": "ali",
-                "image_name":"LBG_DeePMD-kit_2.1.0_v1",
+                "image_name":"registry.dp.tech/dptech/deepmd-kit:2.1.5-cuda11.6",
                 "on_demand":0
             }
         }
@@ -48,14 +48,14 @@
           "program_id": program_id,
             "input_data":{
               "api_version":2,
-              "job_type": "indicate",
+              "job_type": "container",
               "log_file": "*/model_devi.log",
               "grouped":true,
               "job_name": "model_devi",
               "disk_size": 200,
-              "scass_type":"c8_m32_1 * NVIDIA V100",
+              "scass_type":"c16_m62_1 * NVIDIA T4",
               "platform": "ali",
-              "image_name":"LBG_DeePMD-kit_2.1.0_v1",
+              "image_name":"registry.dp.tech/dptech/deepmd-kit:2.1.5-cuda11.6",
               "on_demand":0
             }
         }
@@ -82,7 +82,7 @@
           "program_id": program_id,
             "keep_backup":true,
             "input_data":{
-              "job_type": "indicate",
+              "job_type": "container",
               "log_file": "task*/fp.log",
               "grouped":true,
               "job_name": "abacus",
@@ -91,8 +91,9 @@
               "checkpoint_time":30,
               "scass_type":"c16_m32_cpu",
               "platform": "ali",
-              "image_name":"abacus-workshop",
-              "on_demand":0}
+              "image_name":"registry.dp.tech/dptech/prod-12772/abacus-workshop:v1.1",
+              "on_demand":0
+	    }
         }
       },
       "resources": {
