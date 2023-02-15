@@ -4,13 +4,13 @@
 
 ### A.1 Download input files
 ```
->> cd ~
->> git clone https://gitee.com/deepmodeling-activity/colombo-ABACUS.git -b develop
+>> cd /data
+>> git clone https://gitee.com/deepmodeling/colombo-ABACUS.git
 >> cd colombo-ABACUS
->> cd ABACUS/
+>> cd ABACUS
 >> cd MgO_LCAO
 >> ls
-   band_structure  optimization  SCF
+   SCF  band_structure  dos  optimization
 ```
 
 ### A.2 Run SCF
@@ -29,7 +29,7 @@
 
 ### B.1 Run optimization
 ```
->> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/optimization
+>> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/optimization
 >> abacus
 ```
 
@@ -44,7 +44,7 @@
 
 ### C.1 Run SCF
 ```
->> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/band_structure
+>> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/band_structure
 >> cp INPUT_scf INPUT
 >> cp KPT_scf KPT
 >> abacus
@@ -59,14 +59,14 @@
 
 ### C.3 Install `abacus-plot`
 ```
->> cd ~/abacus-develop/tools/plot-tools
+>> cd /abacus-develop/tools/plot-tools
 >> pip install lxml
 >> python3 setup.py install
 ```
 
 ### C.4 Plot band structure
 ```
->> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/band_structure/OUT.MgO/
+>> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/band_structure/OUT.MgO/
 >> cp ../KPT ./
 >> cp ../config.json ./
 >> abacus-plot -b
@@ -76,7 +76,7 @@
 
 ### D.1 Run SCF
 ```
->> cd ~/colombo-ABACUS/ABACUS/MgO_LCAO/dos/
+>> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/dos/
 >> cp INPUT_scf INPUT
 >> cp KPT_scf KPT
 >> abacus
@@ -89,14 +89,14 @@
 >> abacus
 ```
 
-### D.4 Plot TDOS
+### D.3 Plot TDOS
 ```
 >> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/dos/OUT.MgO/
 >> cp ../config_tdos.json ./config.json
 >> abacus-plot -d
 ```
 
-### D.5 Plot PDOS
+### D.4 Plot PDOS
 ```
 >> cd /data/colombo-ABACUS/ABACUS/MgO_LCAO/dos/OUT.MgO/
 >> cp ../config_pdos.json ./config.json
