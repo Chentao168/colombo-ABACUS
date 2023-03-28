@@ -17,7 +17,7 @@ scf_abacus:
   coord_type: "Cartesian"
   #cmd args
   run_cmd : "mpirun"
-  abacus_path: "/root/abacus-develop/build/abacus"
+  abacus_path: "abacus"
 init_scf_abacus:
   orb_files: ["O_gga_6au_60Ry_2s2p1d.orb", "H_gga_6au_60Ry_2s1p.orb"]
   pp_files: ["O_ONCV_PBE-1.0.upf", "H_ONCV_PBE-1.0.upf"]
@@ -35,4 +35,4 @@ init_scf_abacus:
   coord_type: "Cartesian"
   #cmd args
   run_cmd : "mpirun"
-  abacus_path: "/root/abacus-develop/build/abacus"
+  abacus_path: "abacus"
