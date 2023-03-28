@@ -11,7 +11,7 @@
         "remote_profile":{
           "email": "Your Email to sign in Bohrium",
           "password": "The password to sign in Bohrium",
-          "program_id": 11048,
+          "program_id": 11622,
             "input_data":{
                 "api_version":2,
                 "job_type": "container",
@@ -45,7 +45,7 @@
         "remote_profile":{
 	  "email": "Your Email to sign in Bohrium",
           "password": "The password to sign in Bohrium",
-          "program_id": 11048,
+          "program_id": 11622,
             "input_data":{
               "api_version":2,
               "job_type": "container",
@@ -71,7 +71,7 @@
     }],
   "fp":
     [{
-      "command": "OMP_NUM_THREADS=1 mpirun -n 8 /root/abacus-develop/build/abacus",
+      "command": "OMP_NUM_THREADS=1 mpirun -n 8 abacus",
       "machine": {
         "batch_type": "Lebesgue",
         "context_type": "LebesgueContext",
@@ -79,7 +79,7 @@
         "remote_profile":{		
 	  "email": "Your Email to sign in Bohrium",
           "password": "The password to sign in Bohrium",
-          "program_id": 11048,
+          "program_id": 11622,
             "keep_backup":true,
             "input_data":{
               "job_type": "container",
@@ -91,7 +91,7 @@
               "checkpoint_time":30,
               "scass_type":"c16_m32_cpu",
               "platform": "ali",
-              "image_name":"registry.dp.tech/dptech/prod-12772/abacus-workshop:v1.1",
+              "image_name":"registry.dp.tech/dptech/abacus:3.1.4-toolkit",
               "on_demand":0}
         }
       },
