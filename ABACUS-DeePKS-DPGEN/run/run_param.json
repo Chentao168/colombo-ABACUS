@@ -84,7 +84,7 @@
     "model_devi_clean_traj": true,
     "model_devi_jobs": [
         { "sys_idx": [0], "temps": [100], "press": [1.0], "trj_freq": 10,"nsteps": 300, "ensemble": "nvt", "_idx": "00"},
-        { "sys_idx": [0], "temps": [100, 300], "press": [1.0, 100.0], "trj_freq": 10,"nsteps": 300, "ensemble": "nvt", "_idx": "01"}
+        { "sys_idx": [0], "temps": [100, 200], "press": [1.0, 2.0], "trj_freq": 10,"nsteps": 300, "ensemble": "nvt", "_idx": "01"}
 
     ],
     "fp_style": "abacus",
