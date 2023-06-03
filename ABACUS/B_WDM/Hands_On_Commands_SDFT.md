@@ -15,7 +15,7 @@
 ### A.2 Run SCF
 ```
 >> cd SCF
->> mpirun –n 2 abacus
+>> mpirun -n 2 abacus
 ```
 
 ### A.3 Get ETOT
@@ -32,7 +32,7 @@
 ```
 >> cd /data/colombo-ABACUS/ABACUS/B_WDM/NSCF
 >> cp –r ../SCF/OUT.B ./
->> mpirun –n 2 abacus
+>> mpirun -n 2 abacus
 ```
 
 ### B.2 Check DOS
@@ -47,7 +47,7 @@
 ### C.1 Run MD
 ```
 >> cd /data/colombo-ABACUS/ABACUS/B_WDM/MD
->> mpirun –n 2 abacus
+>> mpirun -n 2 abacus
 ```
 
 ### C.2 Get data
