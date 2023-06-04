@@ -9,7 +9,7 @@
 >> cd colombo-ABACUS
 >> cd ABACUS/B_WDM
 >> ls
-   MD  NSCF  SCF
+   Hands_On_Commands_SDFT.md  MD  NSCF  SCF
 ```
 
 ### A.2 Run SCF
@@ -31,7 +31,7 @@
 ### B.1 Run NSCF
 ```
 >> cd /data/colombo-ABACUS/ABACUS/B_WDM/NSCF
->> cp –r ../SCF/OUT.B ./
+>> cp -r ../SCF/OUT.B ./
 >> mpirun -n 2 abacus
 ```
 
