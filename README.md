@@ -2,4 +2,5 @@
 
 This repo provides several learning materials of ABACUS, especially for codes.
 
-https://github.com/Chentao168/colombo-ABACUS/raw/master/%E6%88%90%E9%BE%99atPKU.mp4
+https://github.com/deepmodeling-activity/colombo-ABACUS/assets/76426373/0ce7ae02-5363-4b62-bff1-85c19d313254
+
